@@ -17,11 +17,13 @@ public class Matrix {
 	{  // this for loop for processing ..
 //		int a[][]=new int[3][3];
 //		int b[][]=new int[3][3];
-		int c[][]=new int[3][3];
+		
 		//int arr[][] = {{7,9,3} ,{1,4,3},{8,6,5}};
 		int a[][] = new int [3][3];
         int b[][]=new int[3][3];
-		  for(int row=0;row<a.length;row++)
+        int c[][]=new int[3][3];
+		 
+        for(int row=0;row<a.length;row++)
 		  {
 			  for(int col=0;col<a[row].length;col++)
 			  {
@@ -43,7 +45,7 @@ public class Matrix {
 			 System.out.println();  
 		  }
 		  
-		  //second matrix
+		  //b second matrix
 		  
 		  for(int row=0;row<b.length;row++)
 		  {
@@ -74,22 +76,35 @@ public class Matrix {
 		  
 		  for(int row=0;row<a.length;row++)
 		  {
-			  for(int col=0;col<b[row].length;col++)
+			  for(int col=0;col<b.length;col++)
 			  {
-				  for(int i=0;col<a.length;i++)
-				  {
+					  
 					  c[row][col]=a[row][col]+b[row][col];
-				  }
+				  
 			  }
+			  System.out.println();
 		  }
 		  
 		  for(int row=0;row<c.length;row++)
 		  {
 			 for(int col=0;col<c.length;col++)
 			 {
-				 System.out.println(c[row][col]);
+				 System.out.print(c[row][col]);
 			 }
+		  System.out.println();
+		  
 		  }
+		  
+		  for(int row=0;row<c.length;row++)
+		  {
+			 for(int col=0;col<c.length;col++)
+			 {
+				 System.out.print(c[col][row]);
+			 }
+		  System.out.println();
+		  
+		  }
+		  
 		  
 		//  c[3][3] = a[3][3] +b[3][3];
 		//System.out.println(c[3][3]);  
