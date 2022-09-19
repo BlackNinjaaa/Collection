@@ -9,7 +9,7 @@ public class Amy {
 	}
 
 
- void main() {
+ public void main() {
         int b=153;
         int  amy=0,sum=0;
         int a=b;
