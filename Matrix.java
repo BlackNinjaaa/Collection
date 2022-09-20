@@ -22,6 +22,7 @@ public class Matrix {
 		int a[][] = new int [3][3];
         int b[][]=new int[3][3];
         int c[][]=new int[3][3];
+        int transpose[][]=new int[3][3];
 		 
         for(int row=0;row<a.length;row++)
 		  {
@@ -83,13 +84,13 @@ public class Matrix {
 				  
 			  }
 			  System.out.println();
-		  }
+		  }System.out.println();
 		  
 		  for(int row=0;row<c.length;row++)
 		  {
 			 for(int col=0;col<c.length;col++)
 			 {
-				 System.out.print(c[row][col]);
+				 System.out.print(c[row][col]+" ");
 			 }
 		  System.out.println();
 		  
@@ -99,7 +100,8 @@ public class Matrix {
 		  {
 			 for(int col=0;col<c.length;col++)
 			 {
-				 System.out.print(c[col][row]);
+				 transpose[row][col]=c[col][row];
+				 System.out.print(transpose[row][col]+" ");
 			 }
 		  System.out.println();
 		  
