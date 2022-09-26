@@ -15,14 +15,11 @@ public class Matrix {
 
 	void find()
 	{  // this for loop for processing ..
-//		int a[][]=new int[3][3];
-//		int b[][]=new int[3][3];
 		
-		//int arr[][] = {{7,9,3} ,{1,4,3},{8,6,5}};
 		int a[][] = new int [3][3];
         int b[][]=new int[3][3];
         int c[][]=new int[3][3];
-        int transpose[][]=new int[3][3];
+       // int transpose[][]=new int[3][3];
 		 
         for(int row=0;row<a.length;row++)
 		  {
@@ -32,7 +29,7 @@ public class Matrix {
 				
 			  }
 			  
-			  //System.out.println();  
+			   
 		  }
 		  // this loop for print what is am get 
 		  for(int row=0;row<a.length;row++)
@@ -40,7 +37,7 @@ public class Matrix {
 			  for(int col=0;col<a[row].length;col++) // arr[row].length > using 
 			  {
 				System.out.print(a[row][col]);
-				//
+			
 			  }
 			  
 			 System.out.println();  
@@ -56,7 +53,6 @@ public class Matrix {
 				
 			  }
 			  
-			  //System.out.println();  
 			  	  
 		  
 		  }
@@ -84,7 +80,8 @@ public class Matrix {
 				  
 			  }
 			  System.out.println();
-		  }System.out.println();
+			  
+		  }
 		  
 		  for(int row=0;row<c.length;row++)
 		  {
@@ -95,23 +92,6 @@ public class Matrix {
 		  System.out.println();
 		  
 		  }
-		  
-		  for(int row=0;row<c.length;row++)
-		  {
-			 for(int col=0;col<c.length;col++)
-			 {
-				 transpose[row][col]=c[col][row];
-				 System.out.print(transpose[row][col]+" ");
-			 }
-		  System.out.println();
-		  
-		  }
-		  
-		  
-		//  c[3][3] = a[3][3] +b[3][3];
-		//System.out.println(c[3][3]);  
-		
-		  
 		  
 	}
 	

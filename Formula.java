@@ -9,6 +9,7 @@ public class Formula {
            by.find();
 	}
 	float si=0;
+	
 	void find()
 	{
 		System.out.println("Enter the Principle amount :");
@@ -17,10 +18,22 @@ public class Formula {
 		float R=sc.nextFloat();
 		System.out.println("Enter the duration :");
 		float T=sc.nextFloat();
+		
 		si=(P*R*T)/100 ;
 		
 		System.out.println("The simple intrest is :"+si);
 		
 	}
 
+	void algeb() //
+	{
+		
+	}
+	
+//	public void demo()
+//	{
+//		int a=5;
+//		int b=10;
+//	}
+	
 }
